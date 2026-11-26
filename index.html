@@ -3,13 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>作品集 · 两个可交互 Demo</title>
+<title>全栈开发 · 作品集与接单</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#0f1115;color:#eee;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px}
 .wrap{max-width:720px;width:100%}
 h1{font-size:24px;margin-bottom:6px}
-.sub{color:#9aa4b2;font-size:14px;margin-bottom:26px}
+.sub{color:#9aa4b2;font-size:14px;margin-bottom:22px}
 .card{display:block;background:#181b21;border:1px solid #2a2f38;border-radius:14px;padding:20px;margin-bottom:14px;text-decoration:none;color:inherit;transition:.2s}
 .card:hover{border-color:#ff5a3c;transform:translateY(-2px)}
 .tag{display:inline-block;font-size:12px;padding:2px 10px;border-radius:20px;margin-bottom:10px}
@@ -17,13 +17,33 @@ h1{font-size:24px;margin-bottom:6px}
 .t2{background:rgba(88,144,255,.15);color:#7ea4ff}
 .card h2{font-size:18px;margin-bottom:6px}
 .card p{color:#9aa4b2;font-size:13px;line-height:1.6}
-.foot{color:#6b7280;font-size:12px;margin-top:20px;line-height:1.7}
+
+/* 技术栈 */
+.stack{margin:26px 0 18px}
+.stack h3{font-size:15px;margin-bottom:12px;color:#ddd}
+.pills{display:flex;flex-wrap:wrap;gap:8px}
+.pill{font-size:13px;padding:6px 14px;border-radius:20px;background:#1c2028;border:1px solid #2e3440;color:#c7d0db}
+
+/* 能力说明 */
+.about{background:#181b21;border:1px solid #2a2f38;border-radius:14px;padding:20px;margin-bottom:22px}
+.about h3{font-size:15px;margin-bottom:10px;color:#ddd}
+.about p{color:#9aa4b2;font-size:14px;line-height:1.8}
+
+/* 接单入口 */
+.contact{background:linear-gradient(135deg,rgba(255,90,60,.12),rgba(88,144,255,.10));border:1px solid #3a3028;border-radius:14px;padding:22px;text-align:center}
+.contact h3{font-size:18px;margin-bottom:6px}
+.contact .lead{color:#9aa4b2;font-size:13px;margin-bottom:16px}
+.btn{display:inline-block;background:#ff5a3c;color:#fff;text-decoration:none;font-size:15px;font-weight:600;padding:12px 28px;border-radius:10px;transition:.2s}
+.btn:hover{background:#ff7a63}
+.gh{display:inline-block;margin-top:14px;color:#7ea4ff;font-size:13px;text-decoration:none}
+.gh:hover{text-decoration:underline}
+.foot{color:#6b7280;font-size:12px;margin-top:20px;line-height:1.7;text-align:center}
 </style>
 </head>
 <body>
 <div class="wrap">
-  <h1>可交互 Demo 作品集</h1>
-  <div class="sub">两个成品原型 · 手机 / 电脑浏览器都能点 · 交互全部真实可用</div>
+  <h1>全栈开发 · 作品集</h1>
+  <div class="sub">10 年后端 + 5 年前端 · 两个可点可用的成品 Demo · 接全栈 / 小程序 / 官网项目</div>
 
   <a class="card" href="demo1_pos.html">
     <span class="tag t1">Demo 1 · 小程序 / H5</span>
@@ -37,6 +57,32 @@ h1{font-size:24px;margin-bottom:6px}
     <p>首屏 + 数据条 + 业务领域 + 律师团队 + 服务流程 + 在线咨询表单（含提交成功态）。覆盖律所、医疗、教育等获客型官网需求。</p>
   </a>
 
+  <div class="stack">
+    <h3>技术栈</h3>
+    <div class="pills">
+      <span class="pill">Go</span>
+      <span class="pill">Java</span>
+      <span class="pill">Python</span>
+      <span class="pill">Vue3</span>
+      <span class="pill">React</span>
+      <span class="pill">小程序 / H5</span>
+      <span class="pill">企业官网</span>
+    </div>
+  </div>
+
+  <div class="about">
+    <h3>我能为你做什么</h3>
+    <p>我能独立完成从后端接口到前端页面的全栈交付。上面两个 Demo 都是我一人做的可交互成品——不是设计稿，是真的能点、能下单、能提交。适合需要「一个人对接到底」的中小型项目。</p>
+  </div>
+
+  <div class="contact">
+    <h3>📮 有项目想聊？</h3>
+    <div class="lead">小程序 / 企业官网 / 全栈定制开发，欢迎咨询与报价</div>
+    <a class="btn" href="mailto:hello@example.com">找我接单 / 咨询</a>
+    <div><a class="gh" href="https://github.com/tiny999-web" target="_blank" rel="noopener">GitHub：github.com/tiny999-web</a></div>
+  </div>
+
+  <div class="foot">两个 Demo 均为可交互成品原型 · 手机 / 电脑浏览器均可直接体验</div>
 </div>
 </body>
 </html>
