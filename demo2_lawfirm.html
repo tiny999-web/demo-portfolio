@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>恒正律师事务所 | 企业法律顾问 · 商事诉讼</title>
+<style>
+  :root{--navy:#0f2a4a;--gold:#c8a45c;--ink:#222;--gray:#6b7280;--bg:#f7f8fa;--line:#e5e7eb;}
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{font-family:"PingFang SC","Microsoft YaHei",sans-serif;color:var(--ink);line-height:1.7;background:#fff;}
+  a{text-decoration:none;color:inherit;}
+  .wrap{max-width:1100px;margin:0 auto;padding:0 20px;}
+  /* top bar */
+  .topbar{background:var(--navy);color:#cbd5e1;font-size:13px;padding:8px 0;}
+  .topbar .wrap{display:flex;justify-content:space-between;}
+  /* nav */
+  nav{position:sticky;top:0;background:#fff;border-bottom:1px solid var(--line);z-index:50;}
+  nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;}
+  .logo{font-size:20px;font-weight:700;color:var(--navy);}
+  .logo span{color:var(--gold);}
+  .navlinks{display:flex;gap:28px;font-size:15px;}
+  .navlinks a:hover{color:var(--gold);}
+  .navcta{background:var(--navy);color:#fff;padding:9px 18px;border-radius:4px;font-size:14px;}
+  /* hero */
+  .hero{background:linear-gradient(135deg,var(--navy) 0%,#1c3f6b 100%);color:#fff;padding:90px 0;text-align:center;}
+  .hero h1{font-size:38px;font-weight:700;margin-bottom:16px;}
+  .hero p{font-size:18px;color:#c7d4e6;max-width:620px;margin:0 auto 30px;}
+  .hero .btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;}
+  .btn{padding:13px 30px;border-radius:4px;font-size:15px;font-weight:600;}
+  .btn-gold{background:var(--gold);color:#1a1a1a;}
+  .btn-ghost{border:1px solid rgba(255,255,255,.5);color:#fff;}
+  /* stats */
+  .stats{background:var(--bg);padding:36px 0;}
+  .stats .wrap{display:grid;grid-template-columns:repeat(4,1fr);text-align:center;gap:16px;}
+  .stat b{font-size:30px;color:var(--navy);display:block;}
+  .stat span{font-size:14px;color:var(--gray);}
+  /* sections */
+  section{padding:70px 0;}
+  .sec-h{text-align:center;margin-bottom:46px;}
+  .sec-h h2{font-size:28px;color:var(--navy);}
+  .sec-h p{color:var(--gray);margin-top:8px;}
+  .sec-h::after{content:"";display:block;width:50px;height:3px;background:var(--gold);margin:14px auto 0;}
+  /* services */
+  .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+  .card{background:#fff;border:1px solid var(--line);border-radius:8px;padding:28px;transition:.2s;}
+  .card:hover{box-shadow:0 8px 24px rgba(15,42,74,.1);transform:translateY(-3px);}
+  .card .ic{font-size:30px;margin-bottom:12px;}
+  .card h3{font-size:18px;color:var(--navy);margin-bottom:8px;}
+  .card p{font-size:14px;color:var(--gray);}
+  /* team */
+  .team{background:var(--bg);}
+  .grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;}
+  .lawyer{background:#fff;border-radius:8px;overflow:hidden;border:1px solid var(--line);text-align:center;}
+  .lawyer .av{height:150px;background:linear-gradient(135deg,#28496f,#3d6390);display:flex;align-items:center;justify-content:center;color:#fff;font-size:40px;font-weight:700;}
+  .lawyer .info{padding:16px;}
+  .lawyer h4{color:var(--navy);font-size:16px;}
+  .lawyer p{font-size:13px;color:var(--gray);}
+  /* process */
+  .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;text-align:center;}
+  .step .n{width:46px;height:46px;border-radius:50%;background:var(--navy);color:var(--gold);font-size:20px;font-weight:700;display:flex;align-items:center;justify-content:center;margin:0 auto 12px;}
+  .step h4{font-size:16px;color:var(--navy);margin-bottom:6px;}
+  .step p{font-size:13px;color:var(--gray);}
+  /* contact */
+  .contact{background:var(--navy);color:#fff;}
+  .contact .sec-h h2{color:#fff;}
+  .contact .sec-h p{color:#c7d4e6;}
+  .cform{max-width:600px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+  .cform input,.cform select,.cform textarea{width:100%;padding:12px;border-radius:4px;border:none;font-size:14px;font-family:inherit;}
+  .cform textarea{grid-column:1/3;height:100px;resize:vertical;}
+  .cform .full{grid-column:1/3;}
+  .cform button{background:var(--gold);color:#1a1a1a;border:none;padding:14px;border-radius:4px;font-size:16px;font-weight:700;cursor:pointer;}
+  .msg{grid-column:1/3;text-align:center;color:var(--gold);font-size:14px;min-height:20px;}
+  footer{background:#0a1f38;color:#8fa3bd;text-align:center;padding:22px 0;font-size:13px;}
+  @media(max-width:760px){
+    .navlinks{display:none;}
+    .hero h1{font-size:28px;}
+    .stats .wrap,.grid3,.grid4,.steps{grid-template-columns:repeat(2,1fr);}
+    .cform{grid-template-columns:1fr;}
+    .cform textarea,.cform .full{grid-column:1;}
+  }
+</style>
+</head>
+<body>
+<div class="topbar"><div class="wrap"><span>⚖ 恒正律师事务所 · 专注企业法律服务</span><span>咨询热线 400-888-6666</span></div></div>
+<nav><div class="wrap">
+  <div class="logo">恒正<span>律所</span></div>
+  <div class="navlinks"><a href="#svc">业务领域</a><a href="#team">律师团队</a><a href="#proc">服务流程</a><a href="#contact">在线咨询</a></div>
+  <a class="navcta" href="#contact">免费咨询</a>
+</div></nav>
+
+<header class="hero">
+  <div class="wrap">
+    <h1>企业法律风险，防患于未然</h1>
+    <p>12 年专注企业法律顾问与商事诉讼，累计服务 800+ 家企业，为您的经营保驾护航。</p>
+    <div class="btns"><a class="btn btn-gold" href="#contact">立即预约咨询</a><a class="btn btn-ghost" href="#svc">了解业务领域</a></div>
+  </div>
+</header>
+
+<div class="stats"><div class="wrap">
+  <div class="stat"><b>12</b><span>年执业经验</span></div>
+  <div class="stat"><b>800+</b><span>服务企业</span></div>
+  <div class="stat"><b>96%</b><span>案件胜诉率</span></div>
+  <div class="stat"><b>24h</b><span>响应时效</span></div>
+</div></div>
+
+<section id="svc"><div class="wrap">
+  <div class="sec-h"><h2>核心业务领域</h2><p>覆盖企业经营全周期的法律需求</p></div>
+  <div class="grid3">
+    <div class="card"><div class="ic">🏢</div><h3>企业法律顾问</h3><p>合同审查、合规体检、股权架构设计，做企业的常年法律外脑。</p></div>
+    <div class="card"><div class="ic">⚖️</div><h3>商事诉讼仲裁</h3><p>合同纠纷、股权争议、货款追讨，庭前评估到强制执行全程代理。</p></div>
+    <div class="card"><div class="ic">💼</div><h3>劳动人事</h3><p>员工手册、竞业限制、劳动争议，帮企业管好人、控好风险。</p></div>
+    <div class="card"><div class="ic">🔗</div><h3>股权与投融资</h3><p>增资扩股、股权转让、融资尽调，把好每一份交易文件。</p></div>
+    <div class="card"><div class="ic">🛡️</div><h3>知识产权</h3><p>商标注册、专利布局、侵权维权，守护企业核心资产。</p></div>
+    <div class="card"><div class="ic">📜</div><h3>债务重组破产</h3><p>债权申报、重整谈判、破产清算，困境企业的法律出口。</p></div>
+  </div>
+</div></section>
+
+<section id="team" class="team"><div class="wrap">
+  <div class="sec-h"><h2>资深律师团队</h2><p>平均执业 10 年以上，均毕业于知名法学院</p></div>
+  <div class="grid4">
+    <div class="lawyer"><div class="av">陈</div><div class="info"><h4>陈建国</h4><p>主任律师 · 商事诉讼</p></div></div>
+    <div class="lawyer"><div class="av">林</div><div class="info"><h4>林静怡</h4><p>合伙人 · 公司顾问</p></div></div>
+    <div class="lawyer"><div class="av">王</div><div class="info"><h4>王志远</h4><p>合伙人 · 股权投融资</p></div></div>
+    <div class="lawyer"><div class="av">赵</div><div class="info"><h4>赵敏</h4><p>资深律师 · 劳动人事</p></div></div>
+  </div>
+</div></section>
+
+<section id="proc"><div class="wrap">
+  <div class="sec-h"><h2>服务流程</h2><p>四步，把法律问题办得清清楚楚</p></div>
+  <div class="steps">
+    <div class="step"><div class="n">1</div><h4>免费咨询</h4><p>线上或到所，初步研判案情</p></div>
+    <div class="step"><div class="n">2</div><h4>方案评估</h4><p>出具书面法律意见与报价</p></div>
+    <div class="step"><div class="n">3</div><h4>签约代理</h4><p>明确权责，组建办案团队</p></div>
+    <div class="step"><div class="n">4</div><h4>跟进反馈</h4><p>节点同步，结果闭环</p></div>
+  </div>
+</div></section>
+
+<section id="contact" class="contact"><div class="wrap">
+  <div class="sec-h"><h2>在线咨询</h2><p>留下您的需求，1 个工作日内专人回电</p></div>
+  <form class="cform" id="cf">
+    <input placeholder="您的姓名" required>
+    <input placeholder="联系电话" required>
+    <select class="full"><option>选择咨询领域</option><option>企业法律顾问</option><option>商事诉讼仲裁</option><option>劳动人事</option><option>股权与投融资</option><option>知识产权</option><option>其他</option></select>
+    <textarea placeholder="简要描述您遇到的法律问题"></textarea>
+    <div class="full msg" id="m"></div>
+    <button class="full" type="submit">提交咨询</button>
+  </form>
+</div></section>
+
+<footer><div class="wrap">© 2026 恒正律师事务所 · 演示用模板作品 · 地址：XX市XX区金融中心A座 28 层</div></footer>
+
+<script>
+document.getElementById('cf').addEventListener('submit',function(e){
+  e.preventDefault();
+  document.getElementById('m').textContent='✓ 提交成功，我们将在 1 个工作日内与您联系。';
+  this.reset();
+});
+</script>
+</body>
+</html>

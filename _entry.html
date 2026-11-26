@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>作品集 · 两个可交互 Demo</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#0f1115;color:#eee;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px}
+.wrap{max-width:720px;width:100%}
+h1{font-size:24px;margin-bottom:6px}
+.sub{color:#9aa4b2;font-size:14px;margin-bottom:26px}
+.card{display:block;background:#181b21;border:1px solid #2a2f38;border-radius:14px;padding:20px;margin-bottom:14px;text-decoration:none;color:inherit;transition:.2s}
+.card:hover{border-color:#ff5a3c;transform:translateY(-2px)}
+.tag{display:inline-block;font-size:12px;padding:2px 10px;border-radius:20px;margin-bottom:10px}
+.t1{background:rgba(255,90,60,.15);color:#ff8a6e}
+.t2{background:rgba(88,144,255,.15);color:#7ea4ff}
+.card h2{font-size:18px;margin-bottom:6px}
+.card p{color:#9aa4b2;font-size:13px;line-height:1.6}
+.foot{color:#6b7280;font-size:12px;margin-top:20px;line-height:1.7}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>可交互 Demo 作品集</h1>
+  <div class="sub">两个成品原型 · 手机 / 电脑浏览器都能点 · 交互全部真实可用</div>
+
+  <a class="card" href="demo1_pos.html">
+    <span class="tag t1">Demo 1 · 小程序 / H5</span>
+    <h2>鹿角巷 · 扫码点单</h2>
+    <p>6 款饮品点单闭环：加购物车 → 数量增减 → 结算 → 下单成功提示。覆盖餐饮、零售类小程序需求。</p>
+  </a>
+
+  <a class="card" href="demo2_lawfirm.html">
+    <span class="tag t2">Demo 2 · 企业官网</span>
+    <h2>恒正律师事务所 · 企业官网</h2>
+    <p>首屏 + 数据条 + 业务领域 + 律师团队 + 服务流程 + 在线咨询表单（含提交成功态）。覆盖律所、医疗、教育等获客型官网需求。</p>
+  </a>
+
+  <div class="foot">每个 Demo 都是单文件 HTML，零依赖、离线可跑。真实接单时替换品牌、内容与配色即可交付。<br>说明：本地址为临时在线预览通道，用于快速演示；长期对外展示请使用本地源文件或正式托管。</div>
+</div>
+</body>
+</html>
