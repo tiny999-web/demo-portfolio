@@ -3,112 +3,40 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>鹿角巷·扫码点单</title>
+<title>作品集 · 两个可交互 Demo</title>
 <style>
-*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
-body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f5f5;padding-bottom:80px}
-.banner{background:linear-gradient(135deg,#ff7e5f,#feb47b);color:#fff;padding:22px 18px;padding-top:44px}
-.banner h1{font-size:21px}
-.banner p{font-size:13px;opacity:.92;margin-top:6px}
-.menu{padding:14px}
-.sec-title{font-size:15px;font-weight:600;color:#333;margin:10px 4px}
-.item{display:flex;background:#fff;border-radius:14px;padding:12px;margin-bottom:12px;box-shadow:0 2px 8px rgba(0,0,0,.04);align-items:center}
-.item-img{width:66px;height:66px;border-radius:12px;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:34px;background:#fff3e8}
-.item-info{flex:1;margin-left:12px}
-.item-name{font-size:15px;font-weight:600;color:#222}
-.item-desc{font-size:12px;color:#999;margin-top:4px}
-.item-bottom{display:flex;justify-content:space-between;align-items:center;margin-top:8px}
-.price{color:#ff5a3c;font-weight:700;font-size:17px}
-.price small{font-size:11px;font-weight:400}
-.add-btn{width:30px;height:30px;border-radius:50%;background:#ff5a3c;color:#fff;border:none;font-size:20px;line-height:1;cursor:pointer}
-.bar{position:fixed;bottom:0;left:0;right:0;background:#fff;height:66px;display:flex;align-items:center;padding:0 16px;box-shadow:0 -2px 12px rgba(0,0,0,.08)}
-.cart{position:relative;font-size:30px}
-.cart-badge{position:absolute;top:-4px;right:-8px;background:#ff5a3c;color:#fff;font-size:11px;border-radius:10px;padding:1px 5px;min-width:18px;text-align:center}
-.total{flex:1;margin-left:16px;font-size:13px;color:#666}
-.total b{color:#ff5a3c;font-size:20px}
-.checkout{background:#ff5a3c;color:#fff;border:none;border-radius:24px;padding:12px 26px;font-size:15px;font-weight:600;cursor:pointer}
-.modal{position:fixed;inset:0;background:rgba(0,0,0,.5);display:none;align-items:flex-end;justify-content:center;z-index:99}
-.modal.show{display:flex}
-.sheet{background:#fff;width:100%;border-radius:18px 18px 0 0;padding:22px 18px 30px;max-height:70vh;overflow:auto}
-.sheet h3{font-size:17px;margin-bottom:14px}
-.cart-row{display:flex;justify-content:space-between;align-items:center;padding:10px 0;border-bottom:1px solid #f0f0f0}
-.empty{text-align:center;color:#bbb;padding:30px 0}
-.confirm{margin-top:18px;width:100%;background:#ff5a3c;color:#fff;border:none;border-radius:24px;padding:14px;font-size:16px;font-weight:600;cursor:pointer}
-.toast{position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);background:rgba(0,0,0,.8);color:#fff;padding:14px 22px;border-radius:10px;font-size:14px;z-index:200;display:none}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#0f1115;color:#eee;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px}
+.wrap{max-width:720px;width:100%}
+h1{font-size:24px;margin-bottom:6px}
+.sub{color:#9aa4b2;font-size:14px;margin-bottom:26px}
+.card{display:block;background:#181b21;border:1px solid #2a2f38;border-radius:14px;padding:20px;margin-bottom:14px;text-decoration:none;color:inherit;transition:.2s}
+.card:hover{border-color:#ff5a3c;transform:translateY(-2px)}
+.tag{display:inline-block;font-size:12px;padding:2px 10px;border-radius:20px;margin-bottom:10px}
+.t1{background:rgba(255,90,60,.15);color:#ff8a6e}
+.t2{background:rgba(88,144,255,.15);color:#7ea4ff}
+.card h2{font-size:18px;margin-bottom:6px}
+.card p{color:#9aa4b2;font-size:13px;line-height:1.6}
+.foot{color:#6b7280;font-size:12px;margin-top:20px;line-height:1.7}
 </style>
 </head>
 <body>
-<div class="banner">
-  <h1>鹿角巷 · 扫码点单</h1>
-  <p>桌号 A12 · 到店自取免排队 · 会员9折</p>
+<div class="wrap">
+  <h1>可交互 Demo 作品集</h1>
+  <div class="sub">两个成品原型 · 手机 / 电脑浏览器都能点 · 交互全部真实可用</div>
+
+  <a class="card" href="demo1_pos.html">
+    <span class="tag t1">Demo 1 · 小程序 / H5</span>
+    <h2>鹿角巷 · 扫码点单</h2>
+    <p>6 款饮品点单闭环：加购物车 → 数量增减 → 结算 → 下单成功提示。覆盖餐饮、零售类小程序需求。</p>
+  </a>
+
+  <a class="card" href="demo2_lawfirm.html">
+    <span class="tag t2">Demo 2 · 企业官网</span>
+    <h2>恒正律师事务所 · 企业官网</h2>
+    <p>首屏 + 数据条 + 业务领域 + 律师团队 + 服务流程 + 在线咨询表单（含提交成功态）。覆盖律所、医疗、教育等获客型官网需求。</p>
+  </a>
+
 </div>
-<div class="menu" id="menu"></div>
-<div class="bar">
-  <div class="cart" onclick="openCart()">🛒<span class="cart-badge" id="badge">0</span></div>
-  <div class="total">合计 <b id="total">¥0.00</b></div>
-  <button class="checkout" onclick="openCart()">去结算</button>
-</div>
-<div class="modal" id="modal">
-  <div class="sheet">
-    <h3>购物车</h3>
-    <div id="cartList"></div>
-    <button class="confirm" onclick="confirmOrder()">确认下单 · 微信支付</button>
-  </div>
-</div>
-<div class="toast" id="toast"></div>
-<script>
-const menu=[
- {id:1,name:"黑糖鹿角奶茶",desc:"招牌 · 黑糖珍珠 · 可选冰度甜度",price:18,emoji:"🧋"},
- {id:2,name:"四季春茶",desc:"清爽茶底 · 现泡 · 低卡",price:9,emoji:"🍵"},
- {id:3,name:"芋泥啵啵",desc:"芋泥+波波 · 绵密香浓",price:20,emoji:"🥤"},
- {id:4,name:"杨枝甘露",desc:"芒果西柚 · 港式经典",price:22,emoji:"🥭"},
- {id:5,name:"黑糖珍珠鲜奶",desc:"鲜奶+黑糖珍珠 · 不含茶",price:19,emoji:"🥛"},
- {id:6,name:"柠檬养乐多",desc:"柠檬+养乐多 · 酸甜解腻",price:14,emoji:"🍋"}
-];
-let cart={};
-function render(){
-  document.getElementById('menu').innerHTML=menu.map(i=>`
-   <div class="item">
-    <div class="item-img">${i.emoji}</div>
-    <div class="item-info">
-      <div class="item-name">${i.name}</div>
-      <div class="item-desc">${i.desc}</div>
-      <div class="item-bottom">
-        <div class="price"><small>¥</small>${i.price}</div>
-        <button class="add-btn" onclick="add(${i.id})">+</button>
-      </div>
-    </div>
-   </div>`).join('');
-}
-function add(id){cart[id]=(cart[id]||0)+1;update();}
-function dec(id){cart[id]--;if(cart[id]<=0)delete cart[id];update();}
-function update(){
-  let n=0,t=0;
-  for(const id in cart){const m=menu.find(x=>x.id==id);n+=cart[id];t+=cart[id]*m.price;}
-  document.getElementById('badge').textContent=n;
-  document.getElementById('total').textContent='¥'+t.toFixed(2);
-  const list=document.getElementById('cartList');
-  if(n===0){list.innerHTML='<div class="empty">购物车是空的,快去加点好喝的~</div>';return;}
-  list.innerHTML=menu.filter(m=>cart[m.id]).map(m=>`
-   <div class="cart-row">
-     <div>${m.emoji} ${m.name}</div>
-     <div style="display:flex;align-items:center;gap:10px">
-       <button class="add-btn" style="background:#ddd;color:#333" onclick="dec(${m.id})">−</button>
-       <b>${cart[m.id]}</b>
-       <button class="add-btn" onclick="add(${m.id})">+</button>
-     </div>
-   </div>`).join('')+`<div class="cart-row" style="border:none"><b>合计</b><b style="color:#ff5a3c;font-size:18px">¥${t.toFixed(2)}</b></div>`;
-}
-function openCart(){document.getElementById('modal').classList.add('show');}
-document.getElementById('modal').addEventListener('click',e=>{if(e.target.id==='modal')e.target.classList.remove('show');});
-function confirmOrder(){
-  const n=document.getElementById('badge').textContent;
-  if(n==='0'){toast('先选一杯再下单哦~');return;}
-  toast('✅ 下单成功!桌号A12 · 已发送至出杯台');
-  document.getElementById('modal').classList.remove('show');
-}
-function toast(m){const t=document.getElementById('toast');t.textContent=m;t.style.display='block';setTimeout(()=>t.style.display='none',1800);}
-render();update();
-</script>
 </body>
 </html>
